@@ -1,2 +1,10 @@
-<my-element></my-element>
-<router-outlet></router-outlet>
+<div class="chart-container">
+  @if(data) {<my-element
+    [data]="data"
+    [options]="options"
+    [type]="type"
+    [plugins]="datalabels"
+  ></my-element
+  >}
+</div>
+
